@@ -1,0 +1,801 @@
+/* 
+    Document   : style
+    Created on : Apr 13, 2013, 1:51:15 AM
+    Author     : Driton
+    Description: Pretty colours
+        
+*/
+
+
+
+body
+{
+font-family: Century Gothic, sans-serif;
+background-image:url(images/bg.png);
+background-repeat:repeat-x;
+}
+
+#container
+{
+width:920px;
+height:750px;
+margin:0 auto;
+}
+
+
+#header
+{
+height:150px;
+background-image:url(images/header.png);
+background-repeat:no-repeat;
+background-position:center;
+}
+
+
+#menu_wrapper
+{
+width:920px;
+height:400px;
+}
+
+#menu
+{
+width:150px;
+height:316px;
+float:left;
+background-image:url(images/menu_bg.png);
+background-repeat:repeat-x; 
+
+}
+
+.menulist
+{
+padding: 0px;
+}
+
+.menulist li
+{
+width: 100px;    
+list-style-type:none;
+white-space: nowrap;
+margin-left:10px;
+}
+
+.menulist a
+{
+color:orange;
+text-decoration:none;
+}
+
+.menulist a:hover
+{
+color:red;
+}
+
+.menulist a:active
+{
+color:blueviolet;
+}
+
+
+#title_wrapper
+{
+width:720px;
+height:30px;
+float:right;
+margin:0 auto;
+background-image:url(images/title_background.png);
+background-repeat:no-repeat;
+background-position:center;
+}
+
+#title_wrapper input[type=text]
+{
+width:680px;
+height:25px;
+background-color:transparent;
+border:none;
+padding-left:20px;
+padding-right:20px;
+font-family: inherit;
+font-size: 13px;
+color:#222222;
+}
+
+
+#newpost
+{
+width:720px;
+height:400px;
+float:right;
+background-image:url(images/menu_bg.png);
+background-repeat:repeat-x; 
+
+}
+
+
+#newpost textarea
+{
+width:685px;
+height:250px;
+padding:10px;
+font-family: inherit;
+font-size: 13px;
+color:#222222;
+background-color:transparent;
+border:none;
+resize:none;
+}
+
+#textarea
+{
+margin:0 auto;
+width:700px;
+}
+
+
+#buttons
+{
+margin:0 auto;
+margin-top:55px;
+}
+
+.buttons input[type=button]
+{
+width:110px;
+height:25px;
+background-image:url(images/button_bg.png);
+border:none;
+color:white;
+margin-left:170px;
+}
+
+
+.buttons input[type=button]:active
+{
+background-image:url(images/button_bg_active.png);
+border:none;
+}
+
+#submit
+{
+margin:0 auto;
+margin-top:30px;
+}
+
+
+
+
+#latestpostsheader
+{
+height:60px;
+background-image:url(images/latestposts_bg.png);
+
+}
+#latestposts
+{
+width:920px;
+height:300px;
+}
+
+.post
+{
+width:275px;
+padding:15px;
+float:left;
+}
+
+.post h3
+{
+color:#666666;    
+}
+
+.post p
+{
+text-align:justify;
+color:#666666;
+}
+
+
+#footer
+{
+width:100%;
+height:55px;
+background-color:#ecf0d6;
+}
+
+
+.clear
+{
+clear:both;
+}
+
+/* End index */
+
+
+/* Start log-in */
+
+.logintext
+{
+    font-size: 13px;
+}
+
+#loginformwrap
+{
+width:550px;
+margin:0 auto;
+margin-top:100px;
+text-align:center;
+}
+
+#loginformwrap input[type=text], #loginformwrap input[type=password]
+
+{
+width:160px;
+height:20px;
+margin-top:20px;
+border:none;
+}
+ 
+
+
+#registerformwrap
+{
+width:550px;
+margin:0 auto;
+margin-top:100px;
+text-align:center;
+display:none;
+}
+
+#registerformwrap input[type=text], #registerformwrap input[type=password]
+
+{
+width:160px;
+height:20px;
+margin-top:20px;
+border:none;
+}
+
+#submitregistration
+{
+margin:0 auto;
+margin-top:30px;
+}
+
+
+
+
+#resetformwrap
+{
+width:550px;
+margin:0 auto;
+margin-top:100px;
+text-align:center;
+display:none;
+}
+
+#resetformwrap input[type=text], #resetformwrap input[type=password]
+
+{
+width:160px;
+height:20px;
+margin-top:20px;
+border:none;
+}
+
+#resetpassform
+{
+width:550px;
+margin:0 auto;
+margin-top:100px;
+text-align:center;
+display:block;
+}
+
+#resetpassform input[type=text], #resetpassform input[type=password]
+
+{
+width:160px;
+height:20px;
+margin-top:20px;
+border:none;
+}
+
+#submitreset
+{
+margin:0 auto;
+margin-top:30px;
+}
+
+.hidden
+{
+	display: none;
+}
+
+/* Modal box */
+.modal_box
+{
+	position: absolute; 
+	left: 30%;
+	top: 20%;
+	display: none;
+	height: 300px;
+	width: 500px;
+	border: 1px solid #fff;
+	box-shadow: 0px 2px 7px #292929;
+	-moz-box-shadow: 0px 2px 7px #292929;
+	-webkit-box-shadow: 0px 2px 7px #292929;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: #f2f2f2; 
+	z-index: 50;
+}
+
+.modal_close
+{
+	position: relative;
+	top: -25px;
+	left: 20px;
+	float: right;
+	display: block;
+	height: 50px;
+	width: 50px;
+	background: url(images/close.png) no-repeat;
+}
+
+.block_page
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.6);
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	display: none;
+}
+
+.inner_modal_box
+{
+	background-color: #fff;
+	height: 250px;
+	width: 450px;
+	padding: 10px;
+	margin: 15px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+/* Modal box end*/
+
+/* Gallery */
+
+#gallery_albums
+{
+width:720px; 
+height:800px; 
+float:right;
+}
+
+.gallery_menu
+{
+	padding-left:25%;
+}
+
+#gallery 
+{
+width:720px; 
+height:800px; 
+margin-left:220px;
+padding-top: 55px;
+}
+
+#add_images
+{
+padding-left: 20px;
+}
+
+.album
+{   
+width:170px;
+height:170px;
+background-image:url(images/albumcover.png);
+background-repeat:no-repeat;
+background-position:center;
+float:left;
+}
+
+.album_wrap
+{
+width:175px;
+height:215px;
+padding-right: 60px;
+float:left;
+}
+
+/*.album_wrap
+{
+font-size:14px;
+font-family:inherit;
+font-weight:bold;
+text-align:center;
+}
+*/
+
+.delete_button
+{
+margin-top:-135px;
+width:25px;
+height:25px;
+float:right;
+background-image:url(images/delete_button.png);
+}
+
+.album_title
+{
+font-size:14px;
+font-family:inherit;
+font-weight:bold;
+text-align:center;    
+}
+.album_date
+{
+font-family:inherit;
+text-align:center;
+font-size:12px;    
+}
+
+#paging
+{
+width:100%;
+height:20px;
+padding-top:50px;
+text-align:center;
+}
+
+/* Settings page */
+
+#settings_content
+{
+    width:720px;
+    height:400px;
+    float:right;
+}
+
+#settings_content input[type=text], #settings_content input[type=password], #settings_content input[type=button]
+{
+    margin-top:10px;
+}
+
+.settings_element
+{
+    width:350px;
+    height:200px;
+    float:left;
+    color:#222222;
+    margin:0 auto;
+
+}
+
+.settings_element
+{
+    text-align:center;
+}
+.settings_element button[type=submit], .settings_element input[type=button]
+{
+border:1px solid black;
+width:110px;
+height:25px;
+margin-top:5px;
+background-image:url(images/button_bg.png);
+border:none;
+color:white;
+}
+
+
+.settings_element input[type=button]:active
+{
+background-image:url(images/button_bg_active.png);
+border:none;
+}
+
+#avatar_select
+{
+    
+}
+#avatar 
+{
+    display:none;
+}
+
+/* archive */
+
+
+#archive_content_wrap
+{
+    width:720px;
+    float:right;
+}
+
+#year_wrap
+{
+width:600px;
+margin:0 auto;
+}
+
+.year
+{
+   float:left;
+   width:110px;
+   height:74px;
+   margin:15px;
+   margin-top:20px;
+   background-image:url(images/year_background.png);
+   background-repeat:no-repeat;
+   text-align:justify;
+}
+
+
+#month_wrap
+{
+width:600px;
+margin:0 auto;
+}
+.month
+{
+    float:left;
+    width:110px;
+    height:105px;
+    margin:10px;
+    margin-left:15px;
+    margin-right:15px;
+    margin-top:20px;
+    background-image:url(images/month_background.png);
+    background-repeat:no-repeat;
+    text-align:justify;
+}
+
+
+#archive_post_wrap
+{
+width:550px;
+margin:0 auto;
+}
+
+
+.archive_post
+{
+    float:left;
+    width:160px;
+    height:164px;
+    margin:10px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:25px;
+    background-image:url(images/article_background.png);
+    background-repeat:no-repeat;
+}
+
+
+.archive_title
+{
+font-size:16px;
+font-weight:bold;
+color:white;
+text-align:center;
+}
+
+.archive_date
+{
+font-size:12px;
+color:black;
+text-align:center;
+}
+
+.archive_title_post
+{
+width:150px;
+height:35px;
+font-size:12px;
+font-weight:bold;
+color:white;
+text-align:center;  
+margin-left:5px;
+margin-top:5px;
+}
+
+.posted_on
+{
+font-size:13px;
+color:black;
+text-align:center;
+
+}
+
+/* avatar and username above menu */
+#username_avatar
+{
+width:150px;
+height:80px;
+margin-top:3px;
+text-align:center; 
+}
+#username_avatar p
+{
+width:140px;
+font-size:12px;
+color:#222222;
+margin:0 auto;
+}
+
+.menu_avatar
+{
+border:1px solid black;    
+}
+
+/* New Post */
+
+#newpost_wrapper
+{
+width:720px;
+float:right;
+padding-bottom:60px;   /*  treba da se postavi ako slucajno sodrzinata se preklopuva so footerot */
+}
+
+#tinyeditor
+{
+width:642px;
+height:350px;
+resize:none;
+}
+
+#new_post
+{
+text-align:center;    
+}
+
+
+#new_post input[type=text]
+{
+    width:720px;
+    height:20px;
+    background:none;
+    background-image:url(images/menu_bg.png);
+    background-repeat:repeat-x; 
+    border:0;
+   }
+
+#new_post input[type=submit], #new_post input[type=button]
+{
+border:1px solid black;
+width:110px;
+height:25px;
+margin-top:5px;
+background-image:url(images/button_bg.png);
+border:none;
+color:white;
+}
+
+
+/*  Single Post  */ 
+
+#single_post_wrapper
+{
+width:720px;
+height:800px;
+float:right;
+}
+
+#single_post_content
+{
+width:720px;
+height:100%;
+background-image:url(images/menu_bg.png);
+background-repeat:repeat-x;
+border:1px solid  white; 
+}
+ 
+.post_title
+{
+font-size:16px;
+font-weight:bold;
+text-align:center;   
+}
+
+
+.post_content
+{
+font-size:14px;
+text-align:justify; 
+padding:10px;  
+}
+
+.post_date
+{
+font-size:13px;
+text-align:right; 
+padding:5px;
+}
+
+
+/*  Pagination */ 
+
+.pagination {
+}
+
+.pagination span, .pagination em 
+{
+padding: 5px;
+margin-right: 1px;
+
+}
+
+.pagination a 
+{
+padding: 5px;
+text-decoration: none;
+color: #105cb6;
+border: 1px solid #9aafe5; 
+}
+
+.pagination a:hover, .pagination a:focus 
+{
+color: #000033;
+background:white;
+border-color: #000033; }
+
+
+/* Archive menu */
+
+.archive_menu
+{
+width:920px;
+text-align:center;
+}
+
+#back_to_years, #back_to_months
+{
+width:720px;
+text-align:center;
+}
+
+#back_to_years a, #back_to_months a{
+text-decoration: none;
+padding:5px;
+color: #105cb6;
+border: 1px solid #9aafe5; 
+}
+
+
+#back_to_years a:hover, #back_to_years a:focus, #back_to_months a:hover, #back_to_months a:focus 
+{
+color: #000066;
+
+}
+
+
+/* Gallery menu */
+
+.gallery_menu
+{
+width:600px;
+text-align:center;
+}
+
+#create_new_album a, #add_images a, #back_to_albums a
+{
+text-decoration: none;
+padding:5px;
+color: #105cb6;
+border: 1px solid #9aafe5;   
+}
+
+
+#create_new_album a:hover, #create_new_album a:focus, #add_images a:hover, #add_images a:focus,
+#back_to_albums a:hover, #back_to_albums a:focus 
+{
+color: #000044;
+
+}
